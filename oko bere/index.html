@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="vklad()">
+    <header>
+        <h1>Test</h1>
+    </header>
+    
+    <div class="container"> 
+                
+        <div class="column column-left">
+                <div id="penize">
+                    <input id="castka" type="text">
+                    <button id="vsadit" onclick="vsadit()">Vsadit</button>
+                    <br>
+                    <p id="rozpocet"></p>
+                </div>
+
+            <div id="ovladani" class="ovladani">
+                <button onclick="reset()">Reset</button>
+                <button id="odejit" onclick="odejit()">Odejít</button>
+                <p id="sazka"></p>
+                <button disabled id="buttonVzitKartu" onclick="vzitKartu()">vzít kartu</button>
+                <button disabled id="ukoncitKolo" onclick="konec()">ukončit kolo</button>
+                <br>
+                <br>
+                <button id="barva" onclick="barva()">změnit barvu</button>
+            </div>
+
+            <div id="skore">
+                    <p id="score"></p>
+            </div>
+        </div>
+
+        <div class="column column-middle" id="stul">
+            <h3>Hráč</h3>
+            <p id="vytahnuteKartyHrac"></p>
+            <input type="text" disabled value="" id="celkemHrac">
+            <h3>Počítač</h3>
+            <p id="vytahnuteKartyPocitac"></p>
+            <input type="text" disabled value="" id="celkemPocitac">
+        </div>
+
+    </div>
+    
+    <div class="dolni_oba">
+        <div id="zivoty">
+            <canvas id="platno" width="600" height="200"></canvas>
+        </div>
+
+        <div class="zivot">
+            <p id="zivot3" ></p>  
+            <p id="zivot2" ></p>
+            <p id="zivot1" ></p>
+        </div>
+    </div>
+    
+    <div id="bonus">
+    </div>
+
+    
+</body>
+</html>
